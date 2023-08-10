@@ -1,7 +1,5 @@
 package com.gradlehero.themepark;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,8 +12,7 @@ import java.util.Random;
 public class RideStatusService {
     public static String getRideStatus(String ride) {
         Random random = new Random();
-        String trimmedRideName = StringUtils.trim(ride);
-        List<String> rideStatuses = readFile(String.format("%s.txt", trimmedRideName));
+        List<String> rideStatuses = readFile(String.format("%s.txt", ride));
         return rideStatuses.get(random.nextInt(rideStatuses.size()));
     }
 
