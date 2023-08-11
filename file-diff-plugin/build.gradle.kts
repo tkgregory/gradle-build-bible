@@ -18,3 +18,11 @@ gradlePlugin {
         }
     }
 }
+
+testing {
+    suites {
+        val test by getting(JvmTestSuite::class) {
+            useJUnitJupiter()
+        }
+    }
+}
