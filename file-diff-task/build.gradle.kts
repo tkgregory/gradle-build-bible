@@ -1,4 +1,4 @@
-import com.gradlehero.themepark.FileDiffTask
+import com.gradlehero.FileDiffTask
 
 tasks.register<FileDiffTask>("fileDiff") {
     file1.set(file("rollercoaster.jpg"))

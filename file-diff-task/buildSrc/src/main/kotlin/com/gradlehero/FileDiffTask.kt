@@ -1,4 +1,4 @@
-package com.gradlehero.themepark
+package com.gradlehero
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.RegularFileProperty
