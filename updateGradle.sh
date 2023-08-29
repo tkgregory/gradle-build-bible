@@ -9,10 +9,6 @@ fi
 declare -a StringArray=(
 "file-diff-plugin"
 "file-diff-task"
-"gradle-in-the-real-world/code-coverage"
-"gradle-in-the-real-world/code-quality"
-"gradle-in-the-real-world/code-style"
-"gradle-in-the-real-world/docker-image"
 "theme-park-api"
 "theme-park-manager"
 "theme-park-manager-refactored"

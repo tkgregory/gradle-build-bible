@@ -1,8 +1,8 @@
-[![Gradle Hero](https://github.com/tkgregory/gradle-hero/actions/workflows/gradle.yml/badge.svg)](https://github.com/tkgregory/gradle-hero/actions/workflows/gradle.yml)
+[![Gradle Build Bible](https://github.com/tkgregory/gradle-build-bible/actions/workflows/gradle.yml/badge.svg)](https://github.com/tkgregory/gradle-build-bible/actions/workflows/gradle.yml)
 
-[![Gradle Hero](gradle-hero.png)](https://learn.tomgregory.com/courses/gradle-hero)
+[![Gradle Build Bible](gradle-build-bible.png)](https://gradlehero.com/gradle-build-bible)
 
-Sample Gradle projects accompanying [Gradle Hero](https://learn.tomgregory.com/courses/gradle-hero) course.
+Sample Gradle projects accompanying [Gradle Build Bible](https://gradlehero.com/gradle-build-bible) book.
 
 ## Contents
 
@@ -24,16 +24,10 @@ From _Chapter 4: Practical: building Spring Boot applications_
 From _Chapter 5: Practical: creating a multi-project build_
 ### [theme-park-manager-refactored](theme-park-manager-refactored)
 From _Chapter 5: Practical: buildSrc and convention plugins_ and _Creating custom tasks_
+### [file-diff-task](file-diff-task)
+From _Chapter 5: Creating custom tasks
 ### [file-diff-plugin](file-diff-plugin)
 From _Chapter 5: Creating custom plugins_, _Sharing custom plugins_, and _Testing custom plugins_
-### [gradle-in-the-real-world/code-coverage](gradle-in-the-real-world/code-coverage)
-From _Real world Gradle: Code coverage analysis with Jacoco_
-### [gradle-in-the-real-world/code-style](gradle-in-the-real-world/code-style)
-From _Real world Gradle: Code style validation with checkstyle_
-### [gradle-in-the-real-world/code-quality](gradle-in-the-real-world/code-quality)
-From _Real world Gradle: Code quality validation with PMD_
-### [gradle-in-the-real-world/docker-image](gradle-in-the-real-world/docker-image)
-From _Real world Gradle: Build and push Docker images_
 
 ## How to use these projects
 
@@ -43,4 +37,4 @@ Import it into your IDE of choice or run directly from the command line, as per 
 
 ## Accompanying resources
 
-For _Chapter 5_'s multi-project practical, please download [ui.zip](https://gradle-hero.s3.eu-west-1.amazonaws.com/ui.zip).
+For _Chapter 5_'s multi-project practical, please download [ui.zip](https://gradle-build-bible.s3.eu-west-1.amazonaws.com/ui.zip).

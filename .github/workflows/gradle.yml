@@ -1,4 +1,4 @@
-name: Gradle Hero
+name: Gradle Build Bible
 on:
   push:
     branches: [ master ]
@@ -42,21 +42,12 @@ jobs:
     - name: Build theme-park-rides-with-zip-fixed
       run: ./gradlew gD zD
       working-directory: theme-park-rides-with-zip-fixed
+    - name: Build file-diff-task
+      run: ./gradlew build
+      working-directory: file-diff-task
     - name: Build file-diff-plugin
       run: ./gradlew build
       working-directory: file-diff-plugin
-    - name: Build gradle-in-the-real-world/code-coverage
-      run: ./gradlew build
-      working-directory: gradle-in-the-real-world/code-coverage
-    - name: Build gradle-in-the-real-world/code-style
-      run: ./gradlew assemble # deliberately not running check
-      working-directory: gradle-in-the-real-world/code-style
-    - name: Build gradle-in-the-real-world/code-quality
-      run: ./gradlew assemble # deliberately not running check
-      working-directory: gradle-in-the-real-world/code-quality
-    - name: Build gradle-in-the-real-world/docker-image
-      run: ./gradlew bootBuildImage
-      working-directory: gradle-in-the-real-world/docker-image
     - name: Archive UI
       uses: actions/upload-artifact@v3
       with:
@@ -70,10 +61,3 @@ jobs:
         aws-region: eu-west-1
     - name: Copy downloadable to Gradle Build Bible S3 Bucket
       run: aws s3 cp theme-park-manager/ui/build/ui.zip s3://gradle-build-bible
-    - name: Configure Gradle Hero AWS credentials
-      uses: aws-actions/configure-aws-credentials@v2
-      with:
-        role-to-assume: arn:aws:iam::299404798587:role/gradle-hero-Role-KS41B43T74UG
-        aws-region: eu-west-1
-    - name: Copy downloadable to Gradle Hero S3 Bucket
-      run: aws s3 cp theme-park-manager/ui/build/ui.zip s3://gradle-hero
