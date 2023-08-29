@@ -12,8 +12,6 @@ For explanations of each project, please review the relevant course lessons.
 From _Chapter 1: Practical: creating a simple Gradle project_
 ### [theme-park-rides-with-zip](theme-park-rides-with-zip)
 From _Chapter 1: "Zip" challenge_
-### [theme-park-rides-kotlin](theme-park-rides-kotlin)
-From _Chapter 3: Kotlin build scripts_
 ### [theme-park-rides-with-zip-fixed](theme-park-rides-with-zip-fixed)
 From _Chapter 3: Task inputs & outputs_
 ### [theme-park-rides-status](theme-park-rides-status)

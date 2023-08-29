@@ -30,9 +30,6 @@ jobs:
     - name: Build theme-park-rides
       run: ./gradlew gD
       working-directory: theme-park-rides
-    - name: Build theme-park-rides-kotlin
-      run: ./gradlew gD
-      working-directory: theme-park-rides-kotlin
     - name: Build theme-park-rides-status
       run: ./gradlew build
       working-directory: theme-park-rides-status
