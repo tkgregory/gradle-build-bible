@@ -16,6 +16,8 @@ From _Chapter 1: "Zip" challenge_
 From _Chapter 3: Task inputs & outputs_
 ### [theme-park-rides-status](theme-park-rides-status)
 From _Chapter 4: Practical: building a Java project_
+### [theme-park-rides-status-extended](theme-park-rides-status-extended)
+As above, but includes changes from _Chapter 4: Running Java applications_ and _Chapter 4: Adding integration tests to a project_
 ### [theme-park-api](theme-park-api)
 From _Chapter 4: Practical: building Spring Boot applications_
 ### [theme-park-manager](theme-park-manager)

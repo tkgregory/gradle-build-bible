@@ -1,5 +1,5 @@
 plugins {
-    application
+    java
 }
 
 repositories {
@@ -7,7 +7,6 @@ repositories {
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-lang3:3.12.0")
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
 }
 
@@ -17,24 +16,6 @@ tasks.named<Jar>("jar") {
     }
 }
 
-tasks.withType<Test>().configureEach {
+tasks.named<Test>("test") {
     useJUnitPlatform()
-}
-
-application {
-    mainClass.set("com.gradlehero.themepark.RideStatusService")
-}
-
-testing {
-    suites {
-        register<JvmTestSuite>("integrationTest") {
-            dependencies {
-                implementation(project())
-            }
-        }
-    }
-}
-
-tasks.named("check") {
-    dependsOn(tasks.named("integrationTest"))
 }
