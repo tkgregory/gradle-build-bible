@@ -20,6 +20,13 @@ application {
     mainClass.set("com.gradlehero.themepark.RideStatusService")
 }
 
+tasks.register<JavaExec>("runJar") {
+    classpath(tasks.named("jar").map { it.outputs })
+    classpath(configurations.runtimeClasspath)
+    args(" teacups")
+    mainClass.set("com.gradlehero.themepark.RideStatusService")
+}
+
 testing {
     suites {
         val test by getting(JvmTestSuite::class) {
