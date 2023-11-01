@@ -6,12 +6,12 @@ plugins {
 
 tasks.register<Copy>("generateDescriptions") {
     from("descriptions")
-    into("$buildDir/descriptions")
+    into(layout.buildDirectory.dir("descriptions"))
     filter<ReplaceTokens>("tokens" to mapOf("THEME_PARK_NAME" to "Grelephant's Wonder World"))
 }
 
 tasks.register<Zip>("zipDescriptions") {
-    from("$buildDir/descriptions")
-    destinationDirectory.set(buildDir)
+    from(layout.buildDirectory.dir("descriptions"))
+    destinationDirectory.set(layout.buildDirectory)
     archiveFileName.set("descriptions.zip")
 }
