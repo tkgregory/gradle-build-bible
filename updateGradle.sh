@@ -14,6 +14,7 @@ declare -a StringArray=(
 "theme-park-manager-refactored"
 "theme-park-rides"
 "theme-park-rides-status"
+"theme-park-rides-status-extended"
 "theme-park-rides-with-zip"
 "theme-park-rides-with-zip-fixed"
  )
