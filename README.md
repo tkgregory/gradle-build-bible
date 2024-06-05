@@ -1,8 +1,8 @@
 [![Gradle Build Bible](https://github.com/tkgregory/gradle-build-bible/actions/workflows/gradle.yml/badge.svg)](https://github.com/tkgregory/gradle-build-bible/actions/workflows/gradle.yml)
 
-[![Gradle Build Bible](gradle-build-bible.png)](https://gradlehero.com/gradle-build-bible)
+[![Gradle Build Bible](gradle-build-bible.png)](https://tomgregory.com/gradle-build-bible)
 
-Sample Gradle projects accompanying [Gradle Build Bible](https://gradlehero.com/gradle-build-bible) book.
+Sample Gradle projects accompanying [Gradle Build Bible](https://tomgregory.com/gradle-build-bible) book.
 
 ## Contents
 
